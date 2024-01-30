@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Selu383.SP24.Api.Data;
 
@@ -10,9 +11,11 @@ using Selu383.SP24.Api.Data;
 namespace Selu383.SP24.Api.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20240126003718_NewHotelSeed")]
+    partial class NewHotelSeed
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -53,7 +56,7 @@ namespace Selu383.SP24.Api.Migrations
                         {
                             Id = 2,
                             Address = "2200 South Rd",
-                            Name = "Easy Sleep"
+                            Name = "Marriot"
                         },
                         new
                         {
