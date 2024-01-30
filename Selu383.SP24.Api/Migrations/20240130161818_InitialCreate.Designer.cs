@@ -11,8 +11,8 @@ using Selu383.SP24.Api.Data;
 namespace Selu383.SP24.Api.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240126002735_SeedHotel")]
-    partial class SeedHotel
+    [Migration("20240130161818_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,7 +24,7 @@ namespace Selu383.SP24.Api.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Selu383.SP24.Api.Features.Hotel.Hotel", b =>
+            modelBuilder.Entity("Selu383.SP24.Api.Features.Hotels.Hotel", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -56,13 +56,13 @@ namespace Selu383.SP24.Api.Migrations
                         {
                             Id = 2,
                             Address = "2200 South Rd",
-                            Name = "Marriot"
+                            Name = "Easy Sleep"
                         },
                         new
                         {
                             Id = 3,
-                            Address = "45 Jail Cv",
-                            Name = "Parish Prison"
+                            Address = "380 North Cove",
+                            Name = "Comfort Inn"
                         });
                 });
 #pragma warning restore 612, 618
