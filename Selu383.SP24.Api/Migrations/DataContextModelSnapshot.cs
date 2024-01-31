@@ -41,26 +41,6 @@ namespace Selu383.SP24.Api.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Hotels");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Address = "123 Main St",
-                            Name = "Hilton"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Address = "2200 South Rd",
-                            Name = "Easy Sleep"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Address = "380 North Cove",
-                            Name = "Comfort Inn"
-                        });
                 });
 #pragma warning restore 612, 618
         }

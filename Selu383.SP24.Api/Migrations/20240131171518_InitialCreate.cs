@@ -2,8 +2,6 @@
 
 #nullable disable
 
-#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
-
 namespace Selu383.SP24.Api.Migrations
 {
     /// <inheritdoc />
@@ -24,16 +22,6 @@ namespace Selu383.SP24.Api.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Hotels", x => x.Id);
-                });
-
-            migrationBuilder.InsertData(
-                table: "Hotels",
-                columns: new[] { "Id", "Address", "Name" },
-                values: new object[,]
-                {
-                    { 1, "123 Main St", "Hilton" },
-                    { 2, "2200 South Rd", "Easy Sleep" },
-                    { 3, "380 North Cove", "Comfort Inn" }
                 });
         }
 

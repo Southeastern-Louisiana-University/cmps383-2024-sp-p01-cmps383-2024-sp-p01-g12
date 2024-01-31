@@ -20,7 +20,6 @@ namespace Selu383.SP24.Api.Controllers
         }
 
         [HttpGet]
-     
          public ActionResult<IEnumerable<HotelDto>> ListAllHotels()
         {
             var hotels = dataContext.Set<Hotel>()

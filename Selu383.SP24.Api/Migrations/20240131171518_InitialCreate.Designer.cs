@@ -11,7 +11,7 @@ using Selu383.SP24.Api.Data;
 namespace Selu383.SP24.Api.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240130161818_InitialCreate")]
+    [Migration("20240131171518_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -44,26 +44,6 @@ namespace Selu383.SP24.Api.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Hotels");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Address = "123 Main St",
-                            Name = "Hilton"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Address = "2200 South Rd",
-                            Name = "Easy Sleep"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Address = "380 North Cove",
-                            Name = "Comfort Inn"
-                        });
                 });
 #pragma warning restore 612, 618
         }
